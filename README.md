@@ -1,31 +1,42 @@
-# Grammar Correction Tool (Node.js + Vercel)
+# ✨ Grammar Correction Tool
 
-A simple grammar correction tool built with **Node.js** and deployed on **Vercel**.
-
-## 🚀 Setup & Deployment
-
-1. Clone this repository:
-   ```bash
-   git clone <your-repo-url>
-   cd grammar-correction-tool-node
-   ```
-
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-
-3. Deploy on Vercel:
-   ```bash
-   vercel
-   ```
-
-4. Open your deployed app URL 🎉
+A simple grammar correction tool that helps you fix grammar mistakes instantly.  
+Built with **HTML, CSS, and JavaScript**, and deployed on **Vercel**.
 
 ---
 
-### 🔧 Tech Used
-- Node.js + Express (Serverless with Vercel)
-- LanguageTool API for grammar checking
-- HTML + CSS frontend
+## 🚀 Live Demo
+👉 [Click Here to Try the App](https://grammar-correction-tool.vercel.app/)
+
+---
+
+## 📦 Features
+- ✅ Corrects grammar instantly  
+- ✅ Simple and clean UI  
+- ✅ Works directly in the browser  
+- ✅ Free & fast (hosted on Vercel)
+
+---
+
+## ⚡ Deployment Steps (if you want to redeploy)
+1. Initialize Git in your project:
+   ```bash
+   git init
+   git branch -M main
+Create a new repo on GitHub.
+
+Push your code:
+
+bash
+Copy code
+git remote add origin https://github.com/your-username/grammar-correction-tool.git
+git add .
+git commit -m "Initial commit"
+git push -u origin main
+Go to Vercel, import the repo, and deploy.
+
+🛠️ Tech Stack
+Frontend: HTML, CSS, JavaScript
+
+Hosting: Vercel
 
