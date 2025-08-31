@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grammar Correction Tool</title>
+  <link rel="stylesheet" href="public/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Grammar Correction Tool</h1>
+    <textarea id="inputText" placeholder="Type your text here..."></textarea>
+    <button onclick="checkGrammar()">Correct Grammar</button>
+    <h2>Corrected Output:</h2>
+    <pre id="outputText"></pre>
+  </div>
+
+  <script>
+    async function checkGrammar() {
+      const text = document.getElementById("inputText").value;
+      const response = await fetch("/api/correct", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ text })
+      });
+      const data = await response.json();
+      document.getElementById("outputText").innerText = data.corrected || "Error occurred";
+    }
+  </script>
+</body>
+</html>
